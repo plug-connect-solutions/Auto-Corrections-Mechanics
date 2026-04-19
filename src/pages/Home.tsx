@@ -11,7 +11,7 @@ export default function Home() {
       <section className="relative min-h-[80vh] md:h-[90vh] flex items-center overflow-hidden pt-20 md:pt-0">
         <div className="absolute inset-0 z-0">
           <img
-            src="/img1.jpeg"
+            src="img1.jpeg"
             alt="Auto Correction Mechanics mobile repair unit working on a heavy duty truck engine"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -141,7 +141,7 @@ export default function Home() {
               className="md:col-span-8 relative group overflow-hidden rounded-md h-[350px] sm:h-[450px] md:h-full"
             >
               <video
-                src="/vid1.mp4"
+                src="vid1.mp4"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 autoPlay
                 muted
@@ -157,7 +157,7 @@ export default function Home() {
             <div className="md:col-span-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-6">
               <div className="relative group overflow-hidden rounded-md aspect-video md:aspect-auto">
                 <img
-                  src="/img3.jpeg"
+                  src="img3.jpeg"
                   alt="Qualified mechanic performing precision work on a heavy truck engine"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
@@ -169,7 +169,7 @@ export default function Home() {
               </div>
               <div className="relative group overflow-hidden rounded-md aspect-video md:aspect-auto">
                 <img
-                  src="/img4.jpeg"
+                  src="img4.jpeg"
                   alt="High quality truck tyres and diagnostics tools ready for roadside help"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
@@ -191,7 +191,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square rounded-md overflow-hidden shadow-lg border border-gray-100">
                 <img
-                  src="/img2_.jpeg"
+                  src="img2_.jpeg"
                   alt="Experienced Auto Correction mechanic specializing in local North West breakdown response"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -330,7 +330,7 @@ export default function Home() {
             >
               <div className="absolute inset-0 z-0">
                 <img 
-                  src="/map_location.png" 
+                  src="map_location.png" 
                   alt="Auto Correction Mechanics Google Maps location at 1214 Krans St, Zeerust" 
                   className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
