@@ -158,7 +158,7 @@ export default function Home() {
               <div className="relative group overflow-hidden rounded-md aspect-video md:aspect-auto">
                 <img
                   src=//"img3.jpeg"
-                  {`$ {import.meta.env.BASE_URL} img3.jpeg`}
+                  {`${import.meta.env.BASE_URL}img3.jpeg`}
                   alt="Qualified mechanic performing precision work on a heavy truck engine"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
