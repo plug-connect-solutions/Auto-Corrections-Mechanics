@@ -14,7 +14,7 @@ import Contact from './pages/Contact';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter = basename="/Auto-Corrections-Mechanics">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
