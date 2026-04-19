@@ -10,6 +10,9 @@ export default defineConfig(({mode}) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+        // HMR is disabled in AI Studio via DISABLE_HMR env var.
+        // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
+        hmr: process.env.DISABLE_HMR !== 'true',
       },
     plugins: [react(), tailwindcss()],
     define: {
@@ -19,11 +22,6 @@ export default defineConfig(({mode}) => {
       alias: {
         '@': path.resolve(__dirname, '.'),
       },
-    },
-    server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
-      hmr: process.env.DISABLE_HMR !== 'true',
     },
   };
 });
