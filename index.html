@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fix to the screen reload issue (avoids screen being blank -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+          return s.replace(/~and~/g, '&') 
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     <link rel="icon" type="image/png" href="logo.png" />
     <title>Auto Correction Mechanics | 24/7 Mobile Truck & Car Repairs Zeerust</title>
     <meta name="description" content="Auto Correction Mechanics. Precision 24/7 response team for heavy-duty breakdowns, mobile truck repairs, and electrical systems in Zeerust and surrounding North West areas. We come to you." />
