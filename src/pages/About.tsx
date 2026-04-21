@@ -4,6 +4,9 @@ import { Shield, Target, Award, MapPin, Phone, Zap, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function About() {
+  // Update this if your GitHub Pages repository is not at the root
+  const baseUrl = ""; 
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -129,9 +132,12 @@ export default function About() {
             <div className="lg:col-span-4 p-12 bg-brand-surface relative overflow-hidden">
               <div className="absolute inset-0 z-0">
                 <img 
-                  src="map_location.png" 
+                  src={`${baseUrl}map_location.png`}
                   alt="Service Area Map" 
                   className="w-full h-full object-cover opacity-20"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=600";
+                  }}
                 />
               </div>
               <div className="relative z-10">
@@ -202,10 +208,11 @@ export default function About() {
               className="aspect-video rounded-md overflow-hidden"
             >
               <img
-                src="img6.jpeg"
+                src={`${baseUrl}img6.jpeg`}
                 alt="Auto Correction Mechanics industrial workshop equipment"
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = "https://unsplash.com/photos/a-man-is-working-on-a-car-engine-6bTHShbYDhY";
                 }}
               />
             </motion.div>
