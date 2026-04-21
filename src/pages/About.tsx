@@ -129,7 +129,7 @@ export default function About() {
             <div className="lg:col-span-4 p-12 bg-brand-surface relative overflow-hidden">
               <div className="absolute inset-0 z-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=600" 
+                  src="map_location.png" 
                   alt="Service Area Map" 
                   className="w-full h-full object-cover opacity-20"
                 />
@@ -202,11 +202,10 @@ export default function About() {
               className="aspect-video rounded-md overflow-hidden"
             >
               <img
-                src="/img6.jpeg"
+                src="img6.jpeg"
                 alt="Auto Correction Mechanics industrial workshop equipment"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200";
+                referrerPolicy="no-referrer"
                 }}
               />
             </motion.div>
