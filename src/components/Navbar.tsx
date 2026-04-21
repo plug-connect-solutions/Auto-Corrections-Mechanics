@@ -22,7 +22,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 sm:gap-3">
             <img 
-              src="/logo.png" 
+              src="logo.png" 
               alt="Auto Correction Mechanics Logo" 
               className="h-10 sm:h-12 w-auto"
               referrerPolicy="no-referrer"
