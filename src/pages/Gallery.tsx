@@ -49,7 +49,7 @@ export default function Gallery() {
               whileHover={{ scale: 0.995 }}
             >
               <video
-                src="/vid2.mp4"
+                src="vid2.mp4"
                 className="w-full h-full object-cover"
                 autoPlay
                 muted
@@ -114,7 +114,7 @@ export default function Gallery() {
             {/* Restored Split Layout for Before & After */}
             <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
               <video
-                src="/vid4.mp4"
+                src="vid4.mp4"
                 className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
                 autoPlay
                 muted
@@ -129,7 +129,7 @@ export default function Gallery() {
 
             <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
               <img
-                src="/img14.jpeg"
+                src="img14.jpeg"
                 alt="Restored heavy duty vehicle components after professional repair"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
@@ -143,7 +143,7 @@ export default function Gallery() {
             {/* Row 1: Balanced Media */}
             <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
               <video
-                src="/vid3.mp4"
+                src="vid3.mp4"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 autoPlay
                 muted
@@ -158,7 +158,7 @@ export default function Gallery() {
 
             <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
               <img
-                src="/img8.jpeg"
+                src="img8.jpeg"
                 alt="Qualified mechanic performing precision work on a heavy truck engine"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
@@ -172,7 +172,7 @@ export default function Gallery() {
             {/* Row 2: Balanced Media */}
             <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
               <video
-                src="/vid5.mp4" 
+                src="vid5.mp4" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 autoPlay
                 muted
@@ -187,7 +187,7 @@ export default function Gallery() {
 
             <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
               <img
-                src="/img12.jpeg"
+                src="img12.jpeg"
                 alt="Auto Correction Mechanics service truck responding to a breakdown call"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
@@ -220,7 +220,7 @@ export default function Gallery() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
               <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
                 <img
-                  src="/img16.jpeg"
+                  src="img16.jpeg"
                   alt="Tyres in storage"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -233,7 +233,7 @@ export default function Gallery() {
 
               <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
                 <img
-                  src="/img19.jpeg"
+                  src="img19.jpeg"
                   alt="Tyres on back of bakkie"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -246,7 +246,7 @@ export default function Gallery() {
 
               <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
                 <img
-                  src="/img17.jpeg"
+                  src="img17.jpeg"
                   alt="Organized tyre storage"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -259,7 +259,7 @@ export default function Gallery() {
 
               <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
                 <img
-                  src="/img18.jpeg"
+                  src="img18.jpeg"
                   alt="Retreading service"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -294,13 +294,13 @@ export default function Gallery() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/img13.jpeg"
+                  src="img13.jpeg"
                   alt="Auto Correction Mechanics service truck responding to a breakdown call"
                   className="rounded-md grayscale hover:grayscale-0 transition-all duration-500"
                   referrerPolicy="no-referrer"
                 />
                 <img
-                  src="/img15.jpeg"
+                  src="img15.jpeg"
                   alt="Professional mechanic providing high quality roadside assistance"
                   className="rounded-md grayscale hover:grayscale-0 transition-all duration-500"
                   referrerPolicy="no-referrer"
