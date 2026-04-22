@@ -7,9 +7,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
   const location = useLocation();
 
-  // We use a relative path that works regardless of depth
-  // The 'window.location.origin' ensures we always hit the root domain
-  const logoPath = "/logo.png"; 
+  // FIX: This ensures that on subpages like /about, the browser 
+  // doesn't look in the wrong place. 
+  const isHome = location.pathname === '/';
+  const logoSrc = isHome ? "logo.png" : "./logo.png";
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -23,19 +24,18 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo - Force the link to the absolute root */}
-          <Link 
-            to="/" 
-            onClick={() => setIsOpen(false)}
-            className="flex items-center gap-2 sm:gap-3 group"
-          >
+          <Link to="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2 sm:gap-3">
             <img 
-              src={logoPath} 
+              src={logoSrc} 
               alt="Auto Correction Mechanics Logo" 
-              className="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105"
+              className="h-10 sm:h-12 w-auto"
               onError={(e) => {
+                // Emergency fallback if the above fails
                 const target = e.target as HTMLImageElement;
-                target.src = 'logo.png'; // Local fallback
+                if (!target.dataset.tried) {
+                  target.dataset.tried = "true";
+                  target.src = "logo.png"; 
+                }
               }}
             />
             <div className="flex flex-col">
@@ -53,7 +53,7 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop Nav */}
+          {/* ... rest of your existing Navbar code (Desktop Nav, Mobile Menu Button, etc.) ... */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
@@ -72,20 +72,15 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-brand-on-surface"
-              aria-label="Toggle Menu"
-            >
+            <button onClick={() => setIsOpen(!isOpen)} className="p-2 text-brand-on-surface">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
       </div>
-
-      {/* Mobile Nav */}
+      
+      {/* Mobile Nav Logic remains the same */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
