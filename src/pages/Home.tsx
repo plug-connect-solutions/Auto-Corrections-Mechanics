@@ -308,7 +308,10 @@ export default function Home() {
                   { city: "Rustenburg", type: "Service Area" },
                   { city: "Vryburg", type: "Service Area" },
                   { city: "Coligny", type: "Service Area" },
-                  { city: "Swartruggens", type: "Service Area" }
+                  { city: "Swartruggens", type: "Service Area" },
+                  { city: "Ramatlabama", type: "Service Area" },
+                  { city: "Skilpadhek", type: "Service Area" },
+                  { city: "Kopfontein", type: "Service Area" },
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <MapPin className="text-brand-primary shrink-0" size={18} />
