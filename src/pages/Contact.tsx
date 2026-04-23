@@ -6,7 +6,8 @@ import { motion } from 'motion/react';
 export default function Contact() {
   const towns = [
     'Zeerust', 'Mafikeng', 'Gaborone', 'Lichtenburg', 
-    'Coligny', 'Vryburg', 'Swartruggens', 'Rustenburg'
+    'Coligny', 'Vryburg', 'Swartruggens', 'Rustenburg',
+    'Ramatlabama (Border)', 'Skilpadhek (Border)', 'Kopfontein (Border)
   ];
 
   return (
@@ -144,7 +145,7 @@ export default function Contact() {
               <div>
                 <h3 className="text-2xl md:text-3xl font-display font-bold mb-6 md:mb-8 uppercase">Where We Help</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {['Zeerust (Hub)', 'Mafikeng (Hub)', 'Gaborone (Regional Hub)', 'Lichtenburg', 'Coligny', 'Vryburg', 'Rustenburg', 'Swartruggens'].map((area) => (
+                  {['Zeerust (Hub)', 'Mafikeng (Hub)', 'Gaborone (Regional Hub)', 'Lichtenburg', 'Coligny', 'Vryburg', 'Rustenburg', 'Swartruggens', 'Ramatlabama (Border)', 'Skilpadhek (Border)', 'Kopfontein (Border)].map((area) => (
                     <div key={area} className="flex items-center gap-2 text-gray-500">
                       <div className="w-1.5 h-1.5 bg-brand-primary rounded-full" />
                       <span className="text-sm font-medium">{area}</span>
