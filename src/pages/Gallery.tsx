@@ -4,6 +4,9 @@ import { Award } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function Gallery() {
+  // Essential for GitHub Pages sub-route asset loading
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -49,7 +52,7 @@ export default function Gallery() {
               whileHover={{ scale: 0.995 }}
             >
               <video
-                src="vid2.mp4"
+                src={`${baseUrl}vid2.mp4`}
                 className="w-full h-full object-cover"
                 autoPlay
                 muted
@@ -111,10 +114,10 @@ export default function Gallery() {
               </div>
             </div>
 
-            {/* Restored Split Layout for Before & After */}
+            {/* Split Layout for Before & After */}
             <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
               <video
-                src="vid4.mp4"
+                src={`${baseUrl}vid4.mp4`}
                 className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
                 autoPlay
                 muted
@@ -129,8 +132,8 @@ export default function Gallery() {
 
             <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
               <img
-                src="img14.jpeg"
-                alt="Restored heavy duty vehicle components after professional repair"
+                src={`${baseUrl}img14.jpeg`}
+                alt="Restored heavy duty vehicle components"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
@@ -140,10 +143,10 @@ export default function Gallery() {
               </div>
             </div>
 
-            {/* Row 1: Balanced Media */}
+            {/* Balanced Media Row 1 */}
             <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
               <video
-                src="vid3.mp4"
+                src={`${baseUrl}vid3.mp4`}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 autoPlay
                 muted
@@ -158,8 +161,8 @@ export default function Gallery() {
 
             <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
               <img
-                src="img8.jpeg"
-                alt="Qualified mechanic performing precision work on a heavy truck engine"
+                src={`${baseUrl}img8.jpeg`}
+                alt="Qualified mechanic performing precision work"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
@@ -169,10 +172,10 @@ export default function Gallery() {
               </div>
             </div>
 
-            {/* Row 2: Balanced Media */}
+            {/* Balanced Media Row 2 */}
             <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
               <video
-                src="vid5.mp4" 
+                src={`${baseUrl}vid5.mp4`} 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 autoPlay
                 muted
@@ -187,8 +190,8 @@ export default function Gallery() {
 
             <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
               <img
-                src="img12.jpeg"
-                alt="Auto Correction Mechanics service truck responding to a breakdown call"
+                src={`${baseUrl}img12.jpeg`}
+                alt="Service truck responding to a breakdown call"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
@@ -220,7 +223,7 @@ export default function Gallery() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
               <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
                 <img
-                  src="img16.jpeg"
+                  src={`${baseUrl}img16.jpeg`}
                   alt="Tyres in storage"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -233,7 +236,7 @@ export default function Gallery() {
 
               <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
                 <img
-                  src="img19.jpeg"
+                  src={`${baseUrl}img19.jpeg`}
                   alt="Tyres on back of bakkie"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -246,7 +249,7 @@ export default function Gallery() {
 
               <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
                 <img
-                  src="img17.jpeg"
+                  src={`${baseUrl}img17.jpeg`}
                   alt="Organized tyre storage"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -259,7 +262,7 @@ export default function Gallery() {
 
               <div className="md:col-span-6 h-[400px] rounded-md overflow-hidden border border-gray-100 relative group">
                 <img
-                  src="img18.jpeg"
+                  src={`${baseUrl}img18.jpeg`}
                   alt="Retreading service"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -282,7 +285,7 @@ export default function Gallery() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a 
-                    href="https://www.google.com/maps/search/?api=1&query=Auto+Correction+Mechanics+Zeerust" 
+                    href="https://www.google.com/maps" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="btn-actuator-primary"
@@ -294,14 +297,14 @@ export default function Gallery() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="img13.jpeg"
-                  alt="Auto Correction Mechanics service truck responding to a breakdown call"
+                  src={`${baseUrl}img13.jpeg`}
+                  alt="Service truck"
                   className="rounded-md grayscale hover:grayscale-0 transition-all duration-500"
                   referrerPolicy="no-referrer"
                 />
                 <img
-                  src="img15.jpeg"
-                  alt="Professional mechanic providing high quality roadside assistance"
+                  src={`${baseUrl}img15.jpeg`}
+                  alt="Roadside assistance"
                   className="rounded-md grayscale hover:grayscale-0 transition-all duration-500"
                   referrerPolicy="no-referrer"
                 />
