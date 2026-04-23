@@ -68,7 +68,7 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-bold text-lg mb-6">Where We Help</h4>
             <ul className="space-y-4">
-              {['Zeerust (Main Hub)', 'Mafikeng (Hub)', 'Gaborone (Regional Hub)', 'Lichtenburg', 'Rustenburg', 'Vryburg', 'Swartruggens','Coligny', 'Kopfontein (Border Post)','Ramatlabama (Border Post)', 'Skilpadhek (Border Post)'].map((area) => (
+              {['Zeerust (Main Hub)', 'Mafikeng (Hub)', 'Gaborone (Regional Hub)', 'Lichtenburg', 'Rustenburg', 'Vryburg'].map((area) => (
                 <li key={area} className="flex items-center gap-2 text-gray-600 text-sm">
                   <div className="w-1.5 h-1.5 bg-brand-primary rounded-full" />
                   {area}
