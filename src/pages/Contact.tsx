@@ -7,7 +7,7 @@ export default function Contact() {
   const towns = [
     'Zeerust', 'Mafikeng', 'Gaborone', 'Lichtenburg', 
     'Coligny', 'Vryburg', 'Swartruggens', 'Rustenburg',
-    'Ramatlabama (Border)', 'Skilpadhek (Border)', 'Kopfontein (Border)
+    'Ramatlabama (Border)', 'Skilpadhek (Border)', 'Kopfontein (Border)'
   ];
 
   return (
