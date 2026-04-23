@@ -132,15 +132,12 @@ export default function Contact() {
                     <div className="shrink-0 w-10 h-10 md:w-12 md:h-12 bg-brand-surface flex items-center justify-center rounded-md text-brand-primary">
                       <Mail size={20} md:size={24} />
                     </div>
-
-                  
                     <div>
                       <p className="label-md text-gray-400 mb-1">Email Us</p>
                       <a href="mailto:info@autocorrection.co.za" className="text-xl md:text-2xl font-display font-bold hover:text-brand-primary transition-colors break-all">info@autocorrection.co.za</a>
                     </div>
-                  */}
-                  
                   </div>
+                */}
                 </div>
               </div>
 
