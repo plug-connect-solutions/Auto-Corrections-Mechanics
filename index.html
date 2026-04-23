@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <script type="text/javascript">
       (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&') 
-          }).join('?');
+    // Check if the URL has the 'p' parameter from our 404 redirect
+      if (l.search.indexOf('p=/') !== -1) {
+      // Extract the path (e.g., /about) from the query string
+      var path = l.search.split('p=')[1].split('&')[0].replace(/~and~/g, '&');
+      
+        // Clean the URL: remove the ?p=/about and replace the browser state
           window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+          l.pathname.slice(0, -1) + path + l.hash
           );
         }
       }(window.location))
